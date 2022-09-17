@@ -111,10 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbb8cbc3bcafff489115b372db25344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XRotation: 0
-  YRotation: 1
-  ZRotation: 0
-  DegreesPerSecond: 180
+  XSpeed: 0
+  YSpeed: 0
+  ZSpeed: 0
+  Multiplier: 0.3
+  TooFar: 5
   BallNumber: 1
 --- !u!54 &-5832823327986135533
 Rigidbody:
