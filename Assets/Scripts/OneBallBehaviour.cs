@@ -13,6 +13,16 @@ public class OneBallBehaviour : MonoBehaviour
     static int BallCount = 0;
     public int BallNumber;
 
+    private void OnMouseDown()
+    {
+        GameController controller = Camera.main.GetComponent<GameController>();
+        if (!controller.GameOver)
+        {
+            controller.ClickedOnBall();
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
